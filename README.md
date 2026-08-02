@@ -1,16 +1,12 @@
-# React + Vite
+# Practical 1: Introduction to React and Component Architecture
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+• Create a React application using Vite for a student portfolio page.
+• The application must include at least 4 reusable components: Header, About, Skills, and Footer.
+• Each component must be independently structured and composed into a single-page layout.
+• No logic or JSX should be duplicated across components.
+• Props must be used to pass at least one piece of data into a minimum of 2 components.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Supplementary Problems
+• Add a NavBar component that highlights the active section.
+• Pass an array of skills as a prop to the Skills component and render them dynamically.
+• Add a theme color prop to the Header and apply it as an inline style.
