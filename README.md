@@ -21,4 +21,19 @@
 - The Contact page must include a controlled input that captures and displays user input in real time.
 
 ## Supplementary Problems
+
 - Store the contact form input in state and display a live character count below the input.
+
+# Practical 3: API Integration and Data Rendering in React
+
+- Integrate a public REST API (e.g., GitHub API) into the portfolio application to fetch and display a list of repositories dynamically.
+- Use the Projects page built in Practical 2 as the integration point.
+- Implement a loading spinner component shown while the request is in progress.
+- Implement an error message component shown if the API call fails.
+- Render at least the repository name and URL for each item returned.
+
+  ## Supplementary Problems
+
+- Add a retry button that re-triggers the fetch when an error occurs.
+- Add a search input that filters the rendered repository list by name.
+- Display the repository's star count alongside its name.  
