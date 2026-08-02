@@ -1,23 +1,20 @@
-import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-const SECTIONS = ["home", "about", "skills", "contact"];
-
 function Navbar() {
-  const [activeSection, setActiveSection] = useState("home");
+  const linkClass = ({ isActive }) => (isActive ? "active" : "");
 
   return (
     <nav className="navbar">
-      {SECTIONS.map((id) => (
-        <a
-          key={id}
-          href={`#${id}`}
-          className={activeSection === id ? "active" : ""}
-          onClick={() => setActiveSection(id)}
-        >
-          {id.charAt(0).toUpperCase() + id.slice(1)}
-        </a>
-      ))}
+      <NavLink to="/" end className={linkClass}>
+        Home
+      </NavLink>
+      <NavLink to="/projects" className={linkClass}>
+        Projects
+      </NavLink>
+      <NavLink to="/contact" className={linkClass}>
+        Contact
+      </NavLink>
     </nav>
   );
 }
